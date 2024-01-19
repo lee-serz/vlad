@@ -26,13 +26,13 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 1300px;
-  height: 1300px;
+  width: 800px;
+  height: 800px;
   content: "";
   background: radial-gradient(
     circle at bottom left,
-    rgba(252, 61, 83, 0.452) 0%,
-    rgba(255, 56, 80, 0) 35%
+    rgba(252, 61, 83, 0.534) 0%,
+    rgba(255, 56, 80, 0) 55%
   );
   transform: rotate(90deg);
 }
@@ -41,13 +41,13 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 1000px;
-  height: 1000px;
+  width: 500px;
+  height: 500px;
   content: "";
   background: radial-gradient(
     circle at bottom left,
     rgba(252, 61, 83, 0.322) 0%,
-    rgba(255, 56, 80, 0) 30%
+    rgba(255, 56, 80, 0) 65%
   );
   transform: rotate(270deg);
 }
