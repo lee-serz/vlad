@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #606060;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #111012;
+  height: 100vh;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 150px 50px;
+  position: relative;
+}
+
+.app {
+  position: relative;
+}
+
+.app::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1300px;
+  height: 1300px;
+  content: "";
+  background: radial-gradient(
+    circle at bottom left,
+    rgba(252, 61, 83, 0.452) 0%,
+    rgba(255, 56, 80, 0) 35%
+  );
+  transform: rotate(90deg);
+}
+
+.app::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 1000px;
+  height: 1000px;
+  content: "";
+  background: radial-gradient(
+    circle at bottom left,
+    rgba(252, 61, 83, 0.322) 0%,
+    rgba(255, 56, 80, 0) 30%
+  );
+  transform: rotate(270deg);
+}
+
+@media (max-width: 650px) {
+  .wrapper {
+    padding: 60px 20px;
+  }
+
+  .app::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 250px;
+    content: "";
+    background: radial-gradient(
+      circle at bottom left,
+      rgba(252, 61, 83, 0.452) 0%,
+      rgba(255, 56, 80, 0) 65%
+    );
+    transform: rotate(90deg);
+  }
+
+  .app::after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    content: "";
+    background: radial-gradient(
+      circle at bottom left,
+      rgba(252, 61, 83, 0.322) 0%,
+      rgba(255, 56, 80, 0) 50%
+    );
+    transform: rotate(270deg);
+  }
+}
